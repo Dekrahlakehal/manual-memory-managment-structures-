@@ -2,6 +2,11 @@
 
 A small C project focused on learning how dynamic memory works by building a custom growable byte buffer.
 
+## Why this project?
+In C, standard arrays have a fixed size. If you run out of space, your program crashes or overwrites memory. This project implements a **smart dynamic container** (`ByteBuffer`) that automatically manages its own memory allocation, doubles its capacity when full, and prevents buffer overflows. 
+
+Understanding how to manually control raw memory blocks and track buffer capacity is essential for handling raw data streams, parsing network packets, and building cryptography or compression pipelines where data size is unpredictable.
+
 ## Project Goal
 
 This project demonstrates core systems-programming ideas:
